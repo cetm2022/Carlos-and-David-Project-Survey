@@ -8,8 +8,30 @@
     <title>Survey Form </title>
 </head>
 <body>
-    <h1 id="title">Sports Survey</h1>
-    <p id="description"> This a survey which help us to know your favorite sport </p>
+    <h1 id="title">Survey Form </h1>
+    <p id="description"> This a survey which helps us tu know about you </p>
+
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+        <label id="name-label" for="name-label">Enter your full Name: <input id="name" name="first-name" type="text" required placeholder="Carlos-David"/></label>
+        <label id="email-label" for="email-label">Enter Your Email: <input id="email" name="email" pattern=".+@globex\.com" type="email" required placeholder="youremail@domain.com"/></label>
+        <label for="new-password">Enter your password <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required placeholder="*******"/></label>
+        <label id="number-label" for="number-label">Enter your favorite number between 0 and 100<input id="number" type="number" min="0" max="100" placeholder="10" ></label>
+        <p>What is your gender?</p>
+        <label for="gender"><input id="gender" type="checkbox"  name="gender" class="sex" value="gender">Man</label>
+       <label for="gender"><input id="gender" type="checkbox"  name="gender" class="sex" value="gender">Woman</label>
+       
+        <p>Just in case you forgot the password memorize this question</p>
+        <label for="referrer">What is your favorite primary-color?
+            <select id="dropdown" name="dropdown">  
+              <option for="1" id="1" value="1">Red</option>
+              <option class="dos" value="2">Green</option>
+              <option value="3">Blue</option>
+  
+            </select>
+          </label>
+          
+    </fieldset>
     
 </body>
 </html>
